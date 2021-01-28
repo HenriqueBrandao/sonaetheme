@@ -1,0 +1,176 @@
+.component4 {
+	padding-top: 0;
+	.footprint {
+		padding-top: 110px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+		background-image: url(./dist/img/bluearrow.svg);
+		background-position: center 80%;
+		background-repeat: no-repeat;
+		background-size: 15%;
+		@media only screen and (max-width: 992px) {
+			justify-content: center;
+			background-image: url(./dist/img/bluearrow-mobile.svg);
+			background-position: center 60%;
+		}
+
+		h6 {
+			color: $blue;
+			margin-bottom: 0;
+			@media only screen and (max-width: 600px) {
+				font-size: 23px;
+			}
+		}
+		&1{
+			display: flex;
+			h4 {
+				font-size: 127px;
+				margin-top: 0;
+				line-height: 1;
+				@media only screen and (max-width: 600px) {
+					font-size: 90px;
+				}
+			}
+			&-block {
+				display: flex;
+		    flex-direction: column;
+		    justify-content: flex-end;
+		    align-items: flex-start;
+				margin-left: 15px;
+				img {
+					@media only screen and (max-width: 600px) {
+						width: 30px;
+					}
+				}
+				h5 {
+					font-size: 50px;
+					@media only screen and (max-width: 600px) {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+		&2{
+			display: flex;
+			align-items: flex-end;
+			@media only screen and (max-width: 992px) {
+				margin-top: 140px;
+			}
+			&-block {
+				margin-bottom: 20px;
+			}
+			div {
+				margin-right: 15px;
+			}
+			h1 {
+				font-size: 127px;
+				line-height: 1;
+				@media only screen and (max-width: 600px) {
+					font-size: 94px;
+				}
+			}
+			h6 {
+				font-size: 13px;
+				color: black;
+				text-align: right;
+				line-height: 1;
+				@media only screen and (max-width: 600px) {
+					font-size: 10px;
+				}
+			}
+			h3 {
+				font-size: 40px;
+		    margin-top: -23px;
+				@media only screen and (max-width: 600px) {
+					font-size: 25px;
+				}
+				&.hand {
+					margin-top: 0;
+					color: $blue;
+					font-size: 90px;
+					@media only screen and (max-width: 600px) {
+						font-size: 69px;
+					}
+				}
+			}
+			img {
+				width: 60px;
+			}
+		}
+	}
+	.visitors {
+		border-top: 1px solid $dark-grey;
+		margin-top: 70px;
+		padding-top: 80px;
+		@media only screen and (max-width: 768px) {
+			padding-top: 0;
+			border-top: 0px solid $dark-grey;
+		}
+		&-item {
+			padding: 0 25px;
+			border-left: 1px solid $dark-grey;
+			@media only screen and (max-width: 768px) {
+				padding-top: 50px;
+				border-top: 1px solid $dark-grey;
+				border-left: 0px;
+			}
+			h6 {
+				margin-bottom: 10px;
+				@media only screen and (max-width: 1024px) {
+					height: 60px;
+				}
+			}
+			img {
+				display: block;
+			}
+			.visitor-icon {
+				height: 60px;
+			}
+			.visitor-blur {
+				margin: 70px auto 30px auto;
+				width: 100%;
+			}
+			h2 {
+				font-size: 70px;
+				text-align: center;
+				span {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+	.planet {
+		border-top: 1px solid $dark-grey;
+		margin-top: 70px;
+		padding-top: 80px;
+		text-align: center;
+		background-image: url(./dist/img/bluearrow-mobile.svg);
+		background-position: 80% 40%;
+		background-repeat: no-repeat;
+		@media only screen and (max-width: 992px) {
+			background: none;
+		}
+		h3 {
+			font-size: 30px;
+			span {
+				color: $blue;
+			}
+		}
+		h2 {
+			margin-top: 90px;
+			font-size: 77px;
+			@media only screen and (max-width: 600px) {
+				font-size: 32px;
+			}
+			.hand {
+				font-size: 90px;
+				color: $blue;
+				@media only screen and (max-width: 600px) {
+					font-size: 48px;
+				}
+			}
+		}
+	}
+}

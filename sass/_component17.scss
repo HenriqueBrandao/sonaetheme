@@ -1,0 +1,62 @@
+.component17 {
+  min-height: 850px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 80px 65px;
+  @media only screen and (max-width: 600px) {
+    min-height: 400px;
+    flex-direction: column;
+  }
+  h6, h2{
+    color: white;
+    span {
+      color: $dark-grey;
+    }
+  }
+  small {
+    color: $dark-grey;
+  }
+  .panel-title {
+    position: relative;
+    z-index: 90;
+    text-align: left;
+    max-width: 400px;
+
+  }
+  .video-wrap {
+    position: absolute;
+    z-index: 80;
+    right: 65px;
+    top: 80px;
+    width: calc(75% - 130px);
+    height: calc(100% - 160px);
+    border-bottom: 0px;
+    video {
+      margin-bottom: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    @media only screen and (max-width: 600px) {
+      position: relative;
+      left: auto;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      video {
+        height: auto;
+      }
+      .playpause {
+        top: 50%;
+      }
+    }
+  }
+  .panel-block {
+    margin-top: 120px;
+    max-width: 300px;
+  }
+
+}

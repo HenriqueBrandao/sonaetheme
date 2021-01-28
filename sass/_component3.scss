@@ -1,0 +1,40 @@
+.component3 {
+	padding-top: 0;
+	.axes {
+		&-row {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-item {
+			width: 20%;
+			@include aspect-ratio(288, 424);
+			position: relative;
+			@media only screen and (max-width: 600px) {
+				width: 50%;
+			}
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				z-index: 90;
+			}
+			&:hover {
+				.axes-item-over {
+					opacity: 0.7;
+				}
+			}
+			&-over {
+				position: absolute;
+				z-index: 100;
+				opacity: 0;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+				background: green;
+				transition: 0.3s;
+			}
+		}
+	}
+}

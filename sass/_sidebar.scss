@@ -1,0 +1,83 @@
+.sidebar{
+	position: fixed;
+	top: 110px !important;
+	right: 0 !important;
+	left: auto !important;
+	z-index: 900;
+	height: calc(100vh - 110px) !important;
+	width: 64px;
+	border-left: 1px solid $dark-grey;
+
+	@media only screen and (max-width: 992px) {
+		display: none;
+	}
+	.midnightInner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		&.fade {
+			opacity: 0.2;
+		}
+	}
+	ul{
+		padding: 0;
+		margin: 0;
+		li{
+			list-style-type: none;
+			margin: 0;
+			padding: 0 8px;
+			a{
+				color: $white;
+				img{
+					opacity: 0.7;
+					margin-top: 16px;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+	}
+	.dark {
+		img {
+			filter: invert(1);
+		}
+	}
+
+	.backtop {
+		cursor: pointer;
+		z-index: 1000;
+		position: absolute;
+    bottom: 76px;
+    left: -32px;
+		opacity: 0;
+		transition: opacity .3s;
+		align-items: center;
+		justify-content: center;
+		font-family: Oswald;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+    width: 155px;
+		display: flex;
+		&.showbar {
+			opacity: 1;
+
+		}
+		svg {
+			transform: rotate(90deg);
+			margin-right: 10px;
+		}
+	}
+
+}
+
+/*Falta animation on Click*/

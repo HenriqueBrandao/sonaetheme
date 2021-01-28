@@ -1,0 +1,55 @@
+.component11 {
+  .block {
+    &-left {
+      background-image: url(./dist/img/arrowsblack.svg);
+  		background-position: right 100px;
+  		background-repeat: no-repeat;
+      background-size: 30%;
+      @media only screen and (max-width: 992px) {
+  			background: none;
+  		}
+      @media only screen and (max-width: 768px) {
+  			order: 2;
+  		}
+
+      .titleblur {
+        h3 {
+          @media only screen and (max-width: 600px) {
+            font-size: 50px;
+          }
+        }
+        img {
+          left: 0;
+          transform: none;
+          @media only screen and (max-width: 600px) {
+            width: auto;
+          }
+        }
+        .caption {
+          font-size: 26px;
+          display: block;
+          padding-left: 50px;
+          padding-top: 10px;
+          @media only screen and (max-width: 600px) {
+            font-size: 23px;
+          }
+        }
+        &.last {
+          margin-left: 100px;
+          @media only screen and (max-width: 992px) {
+      			margin-left: 0;
+      		}
+        }
+      }
+    }
+    &-right {
+      @media only screen and (max-width: 768px) {
+  			order: 1;
+        margin-bottom: 50px;
+  		}
+      h2 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.component10 {
+	padding: 0;
+	.figures {
+		padding: 80px 0;
+		background: $blue;
+		&-block {
+			margin-top: 50px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			@media only screen and (max-width: 600px) {
+				flex-wrap: wrap;
+			}
+			h2 {
+				font-size: 124px;
+				color: white;
+				@media only screen and (max-width: 600px) {
+					font-size: 87px;
+	      }
+			}
+			h6 {
+				margin-left: 15px;
+				font-size: 34px;
+				@media only screen and (max-width: 600px) {
+					font-size: 27px;
+	      }
+				.hand {
+					color: white;
+					font-size: 87px;
+					line-height: 20px;
+					@media only screen and (max-width: 600px) {
+						font-size: 56px;
+		      }
+				}
+				.underline {
+					border-color: white;
+				}
+			}
+			h5 {
+				margin-left: 15px;
+				font-size: 22px;
+				@media only screen and (max-width: 600px) {
+					margin-top: 15px;
+					font-size: 26px;
+	      }
+				span {
+					color: white;
+					&.underline {
+						color: black;
+						border-color: white;
+					}
+				}
+			}
+			&-arrow {
+				position: absolute;
+				left: 140px;
+				top: -40px;
+			}
+		}
+	}
+}
